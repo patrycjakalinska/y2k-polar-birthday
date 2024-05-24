@@ -1,0 +1,132 @@
+.marquee {
+  color: chartreuse;
+}
+
+.tableContainer {
+  display: flex;
+  justify-content: row;
+  justify-content: center;
+}
+
+.table {
+  background-color: chartreuse;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.ramiewRamie {
+  color: mediumblue;
+}
+
+.fishContainer {
+  position: relative;
+  margin-top: -10rem;
+  width: 100%;
+}
+.fish {
+  position: absolute;
+  right: 0;
+}
+
+.personContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ziemekContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ziemek {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.ziemek img:first-child {
+  position: absolute;
+  animation: slideAnimation 4s infinite;
+}
+
+.waveContainer {
+  position: relative;
+}
+
+.waveContainer img {
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+  .waveContainer {
+    display: none;
+  }
+}
+
+.reklamaContainer img {
+  width: 100%;
+  height: 100%;
+}
+.reklamaContainer {
+  max-height: 120px;
+  width: 100%;
+  background-image: url('../../../public/static/img/reklama.jpeg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: round;
+}
+
+.partyMakersMarquee,
+.marquee {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.partyMakersMarquee img {
+  margin-right: 5rem;
+}
+
+@keyframes slideAnimation {
+  0% {
+    right: -80%;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    right: -20%;
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    right: -80%;
+    transform: scale(1);
+  }
+}
